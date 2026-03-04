@@ -1,0 +1,144 @@
+/* Section */
+.contact {
+    padding: 6rem 0;
+    background: #f9f9fb;
+}
+
+/* Center container */
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main card */
+.contact__card {
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Left info */
+.contact__info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact__info p {
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact__details div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__details strong {
+    font-size: 0.9rem;
+    color: #6c63ff;
+    margin-bottom: 0.25rem;
+}
+
+.contact__details span {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* Form */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #e3e3e8;
+    background: #fafafa;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+    border-color: #6c63ff;
+    background: #fff;
+}
+
+.contact__form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Button */
+.contact__form button {
+    margin-top: 0.5rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    background: #6c63ff;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact__form button:hover {
+    background: #574fd6;
+}
+
+/* Responsive */
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .contact__card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+
+    .contact__info {
+        text-align: center;
+    }
+
+    .contact__details div {
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .contact {
+        padding: 4rem 1rem;
+    }
+
+    .contact__card {
+        padding: 1.8rem;
+        border-radius: 16px;
+    }
+
+    .contact__info h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact__form button {
+        width: 100%;
+    }
+}

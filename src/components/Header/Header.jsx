@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./Header.css"
 import '../Skills/Skill.jsx'
+import '../Qualification/Qualification.jsx'
 
 const Header = () => {
     //#region "Toggle Logic"

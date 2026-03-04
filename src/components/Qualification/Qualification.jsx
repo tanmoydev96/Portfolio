@@ -38,7 +38,7 @@ const Qualification = () => {
     const data = activeTab === "education" ? education : experience;
 
     return (
-        <section className="qualification">
+        <section className="qualification" id="qualifications">
             <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My personal journey</span>
 
@@ -62,8 +62,7 @@ const Qualification = () => {
             <div className="timeline">
                 {data.map((item, index) => (
                     <div
-                        className={`timeline-item ${index % 2 === 0 ? "left" : "right"
-                            }`}
+                        className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
                         key={index}
                     >
                         <div className="content">
