@@ -62,8 +62,7 @@ const Qualification = () => {
             <div className="timeline">
                 {data.map((item, index) => (
                     <div
-                        className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
-                        key={index}
+                        className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`} key={index}
                     >
                         <div className="content">
                             <h3>{item.title}</h3>

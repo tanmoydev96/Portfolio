@@ -13,7 +13,7 @@ const Header = () => {
         { "title": "About", "ref": "about" },
         { "title": "Skills", "ref": "skills" },
         { "title": "Qualifications", "ref": "qualifications" },
-        { "title": "Portfolio", "ref": "portfolio" },
+        { "title": "Projects", "ref": "projects" },
         { "title": "Contact", "ref": "contact" }
     ];
 
