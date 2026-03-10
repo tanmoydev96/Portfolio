@@ -1,9 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
     const form = useRef();
+    const [status, setStatus] = useState("idle");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,15 +16,17 @@ const Contact = () => {
                 form.current,
                 "wSLRzYCVmeRjoTsVj"
             )
-            .then(
-                () => {
-                    alert("Message sent successfully ✅");
-                    form.current.reset();
-                },
-                () => {
-                    alert("Failed to send message ❌");
-                }
-            );
+            .then(() => {
+                setStatus("success");
+                form.current.reset();
+
+                setTimeout(() => setStatus("idle"), 3000);
+            })
+            .catch(() => {
+                setStatus("error");
+
+                setTimeout(() => setStatus("idle"), 3000);
+            });
     };
 
     return (
@@ -60,7 +63,12 @@ const Contact = () => {
                             required
                         ></textarea>
 
-                        <button type="submit">Send Message</button>
+                        <button type="submit" className={`send-btn ${status}`}>
+                            {status === "sending" && "Sending..."}
+                            {status === "success" && "✓ Sent"}
+                            {status === "error" && "✕ Failed"}
+                            {status === "idle" && "Send Message"}
+                        </button>
                     </form>
 
                 </div>

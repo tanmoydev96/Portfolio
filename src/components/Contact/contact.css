@@ -100,6 +100,49 @@
     background: #574fd6;
 }
 
+.send-btn {
+    padding: 12px 20px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* loading */
+.send-btn.sending {
+    background: #f59e0b;
+}
+
+/* success */
+.send-btn.success {
+    background: #22c55e;
+    animation: pop 0.4s ease;
+}
+
+/* error */
+.send-btn.error {
+    background: #ef4444;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* Responsive */
 /* Tablet */
 @media screen and (max-width: 992px) {

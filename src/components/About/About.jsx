@@ -1,6 +1,6 @@
 import "./About.css"
 import AboutImg from "../../assets/About.png"
-import CV from "../../assets/Tanmoy_Chowdhury_Software_Engineer.pdf"
+import CV from "../../assets/Tanmoy_Chowdhury_3_2_YOE_March_2026.pdf"
 import Info from "./Info"
 
 function About() {
