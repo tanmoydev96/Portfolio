@@ -63,6 +63,37 @@ const projectData = [
             "Automation",
             "Server Monitoring"
         ]
+    },
+    {
+        id: 5,
+        title: "CSV Channel Export Tool – DataNav Catalyst Dyno Integration",
+        description:
+            "Developed a WPF-based desktop utility tightly integrated with DataNav Catalyst Dyno, a specialized automotive test data management platform used in dyno testing workflows. The tool enables engineers to selectively extract only the required measurement channels from 250+ available channels across 1000+ MF4/CSV test files, rather than exporting everything and manually cleaning up the output. Built with a multi-select channel picker, batch file processing, and a progress-tracked export pipeline, the utility eliminated the tedious post-export column removal step entirely — significantly reducing manual data preparation effort and minimizing the risk of human error in test data workflows.",
+        tech: [
+            "C#",
+            ".NET 8",
+            "WPF",
+            "DataNav Catalyst Dyno",
+            "CSV Processing",
+            "Automotive Testing"
+        ]
+    },
+    {
+        id: 6,
+        title: "Vehicle & EV Test Data Auto-Sync Desktop Application",
+        description:
+            "Architected and developed a WPF desktop application that automates the import and synchronization of vehicle and EV testing data to a central server. The application features a rich configuration UI allowing engineers to select the default vehicle software version, configure various testing parameters, and browse and register local folder paths to watch for incoming test data. Once configured, the application runs silently in the background on user login, monitoring the registered folders for new or updated test files and automatically uploading them to the central server. A system tray icon provides real-time progress tracking and status notifications without interrupting the engineer's workflow. The application also supports configurable automatic deletion of locally imported data after a user-defined retention period to manage disk usage. By replacing a fully manual import process, the solution eliminated 100% of manual data preparation effort, ensured consistent and timely synchronization of test results, and improved overall data availability across the organization.",
+        tech: [
+            "C#",
+            ".NET 8",
+            "WPF",
+            "MVVM",
+            "File System Monitoring",
+            "System Tray",
+            "Background Processing",
+            "Windows Startup Automation",
+            "Automotive / EV Testing"
+        ]
     }
 ]
 

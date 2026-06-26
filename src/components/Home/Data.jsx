@@ -58,7 +58,7 @@ const Data = () => {
             <h3 className="home__subtitle">
                 Software Engineer
             </h3>
-            <p className="home__description">Software engineer with 3 years of experience in <b>.NET</b> <svg height="18px" width="18px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+            <p className="home__description">Software engineer with 3.5 years of experience in <b>.NET</b> <svg height="18px" width="18px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 291.346 291.346" xmlSpace="preserve">
                 <g>
                     <path style={{ fill: "#26A6D1" }} d="M117.547,266.156L0,249.141v-94.296h117.547V266.156z" />

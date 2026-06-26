@@ -45,6 +45,18 @@
   --z-modal: 1000;
 }
 
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Responsive Typography */
 @media screen and (max-width : 992px) {
   :root {
@@ -56,17 +68,6 @@
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
   }
-}
-
-/* Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body,

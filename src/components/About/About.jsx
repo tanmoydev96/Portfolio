@@ -1,6 +1,6 @@
 import "./About.css"
 import AboutImg from "../../assets/About.png"
-import CV from "../../assets/Tanmoy_Chowdhury_3_2_YOE_March_2026.pdf"
+import CV from "../../assets/Tanmoy_Chowdhury_3_5.pdf"
 import Info from "./Info"
 
 function About() {
@@ -14,8 +14,10 @@ function About() {
                 <div className="about__data">
                     <Info />
                     <p className="about__description">
-                        Backend Developer, I Develop API's for Complex Web Application, I have 3+ years of Experience in Developing
-                        Software. I have done worked Fiat Chrysler Automotive for their Lab Workflow groups.
+                        I enjoy designing scalable backend systems, building secure REST APIs, optimizing databases,
+                        and solving complex engineering problems. At Tata Technologies, I've developed software for
+                        automotive engineering teams, modernized legacy applications into .NET 8, automated engineering
+                        workflows, and built systems that eliminated thousands of hours of manual effort.
                     </p>
                     <a href={CV} className="button button--flex" target="_blank" rel="noopener noreferrer">Download CV
                         <svg
