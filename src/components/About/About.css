@@ -50,11 +50,11 @@
 @media screen and (max-width : 992px) {
     .about__container {
         grid-template-columns: 1fr;
-        row-gap: 2.5rem;
+        row-gap: 1.5rem;
     }
 
     .about__img {
-        width: 220px;
+        width: 180px;
     }
 
     .about__box {
@@ -73,7 +73,7 @@
     }
 
     .about__description {
-        padding: 0 5rem;
+        padding: 0;
         margin-bottom: 2rem;
     }
 
@@ -86,7 +86,6 @@
 @media screen and (max-width : 350px) {
     .about__info {
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     .about__description {
