@@ -1,0 +1,24 @@
+bundle:
+  name: mf4-analytics
+
+resources:
+  jobs:
+    mf4_parser:
+      name: mf4-parser
+      tasks:
+        - task_key: parse_bronze_files
+          spark_python_task:
+            python_file: src/parse_mf4.py
+          job_cluster_key: parser_cluster
+          libraries:
+            - pypi: { package: "asammdf==8.6.5" }
+            - pypi: { package: "pandas==2.2.3" }
+      job_clusters:
+        - job_cluster_key: parser_cluster
+          new_cluster:
+            spark_version: 16.4.x-scala2.12
+            node_type_id: Standard_DS3_v2
+            num_workers: 2
+
+# Use an approved, tested DBR/node type for your subscription. For production, replace
+# PyPI libraries with a private, versioned wheel (including your parser code and pins).
